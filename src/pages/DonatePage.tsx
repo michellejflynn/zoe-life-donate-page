@@ -215,7 +215,7 @@ export default function DonatePage() {
                 </h3>
               </div>
               <div className="p-4 text-sm text-muted-foreground border-b border-border">
-                Donate here by card, PayPal or Google/Apple Pay (when available). Or donate by Bank Transfer below to avoid fees.
+                Donate by card, PayPal or Google/Apple Pay (when available), or by Bank Transfer below to avoid fees.
                 <br />
                 Bank transfers and PayPal donations from South African residents are <strong className="text-foreground">tax-deductible</strong>.
               </div>
