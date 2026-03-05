@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { Heart, Users, Globe, Award, ChevronDown, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
-import logo from "@/assets/zl-logo.png";
+import logo from "@/assets/zl-logo.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
