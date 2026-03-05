@@ -126,7 +126,7 @@ export default function DonatePage() {
             className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8 font-light"
           >
             From community clinics to national policy, Zoë-Life has proven what works.
-            Now it needs your help to protect what's been built and power the next chapter of impact.
+            Your donation helps sustain programmes that protect, heal, and empower the next generation.
           </motion.p>
 
           <motion.div
