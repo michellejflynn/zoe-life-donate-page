@@ -206,7 +206,7 @@ export default function DonatePage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-card rounded-2xl shadow-xl overflow-hidden border border-border"
+              className="bg-card rounded-2xl shadow-xl overflow-hidden border border-border max-w-md"
             >
               <div className="bg-primary px-6 py-4">
                 <h3 className="text-xl font-bold text-primary-foreground flex items-center gap-2">
