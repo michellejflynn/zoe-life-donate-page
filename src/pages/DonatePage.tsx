@@ -379,38 +379,87 @@ export default function DonatePage() {
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <footer className="bg-primary py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-2xl font-bold text-primary-foreground mb-4">
-            Our Children • Our Future
-          </h3>
-          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">
-            Join thousands of supporters building resilient futures for children across Southern Africa.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              onClick={scrollToForm}
-              size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full px-8 font-bold"
-            >
-              <Heart className="w-4 h-4 mr-2" />
-              Donate Now
-            </Button>
-            <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-full px-8 font-bold"
-              >
-                Visit Zoë-Life
-                <ExternalLink className="w-4 h-4 ml-2" />
-              </Button>
-            </a>
+      {/* Footer */}
+      <footer className="bg-[#5a5a5a] py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            {/* Logo & Social */}
+            <div className="lg:col-span-1">
+              <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
+                <img src={logo} alt="Zoë-Life" className="h-14 mb-2" />
+              </a>
+              <p className="text-white/70 text-sm mb-4">building resilient futures</p>
+              <div className="flex gap-3 mb-6">
+                {[
+                  { href: "https://www.facebook.com/zaboralife", label: "Facebook" },
+                  { href: "https://www.instagram.com/zaboralife", label: "Instagram" },
+                  { href: "https://www.linkedin.com/company/zoe-life", label: "LinkedIn" },
+                  { href: "https://www.tiktok.com/@zoelife", label: "TikTok" },
+                  { href: "https://www.youtube.com/@zoe-life", label: "YouTube" },
+                ].map((s) => (
+                  <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white text-xs font-bold transition-colors" aria-label={s.label}>
+                    {s.label[0]}
+                  </a>
+                ))}
+              </div>
+              <div className="text-white/50 text-xs space-y-1">
+                <p>© {new Date().getFullYear()} Zoë-Life Innovative Solutions NPC</p>
+                <p>All rights reserved.</p>
+                <p className="italic">Unauthorised use and/or duplication of any material without express and written permission from this site's author and/or owner is strictly prohibited.</p>
+                <p className="mt-2">NPC 2012/109367/08</p>
+              </div>
+            </div>
+
+            {/* Organisation & Get Involved */}
+            <div>
+              <h4 className="text-white font-bold text-lg mb-4">Organisation</h4>
+              <ul className="space-y-2 text-white/70 text-sm">
+                {["Who We Are", "What We Do", "Zoë-Life Learning", "Research and Evidence"].map((item) => (
+                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
+                ))}
+              </ul>
+              <h4 className="text-white font-bold text-lg mt-6 mb-4">Get Involved</h4>
+              <ul className="space-y-2 text-white/70 text-sm">
+                {["Sustainability Fund", "Donate", "Contact Us", "Vacancies"].map((item) => (
+                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Projects & YouThrive */}
+            <div>
+              <h4 className="text-white font-bold text-lg mb-4">Projects</h4>
+              <ul className="space-y-2 text-white/70 text-sm">
+                {["KidzAlive@home", "KidzAlive Mobilised", "KidzAlive Mozambique", "YouThrive Life Skills", "YouThrive Together"].map((item) => (
+                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
+                ))}
+              </ul>
+              <h4 className="text-white font-bold text-lg mt-6 mb-4">YouThrive</h4>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">YouThrive Model</a></li>
+              </ul>
+            </div>
+
+            {/* KidzAlive */}
+            <div>
+              <h4 className="text-white font-bold text-lg mb-4">KidzAlive</h4>
+              <ul className="space-y-2 text-white/70 text-sm">
+                {["KidzAlive Model", "KidzAlive Talk Tool App", "KidzAlive Caregiver Connect", "KidzAlive Courses"].map((item) => (
+                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Policies */}
+            <div>
+              <h4 className="text-white font-bold text-lg mb-4">Policies and Terms</h4>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Privacy Policy</a></li>
+                <li><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Social Media Terms of Use</a></li>
+              </ul>
+              <p className="text-white/70 text-xs mt-6 font-bold">Unless expressly specified, the presence of individuals on this website does not imply any information about their HIV status.</p>
+            </div>
           </div>
-          <p className="text-primary-foreground/50 text-xs mt-8">
-            © {new Date().getFullYear()} Zoë-Life iNPC · Building Resilient Futures Since 2004
-          </p>
         </div>
       </footer>
     </div>
