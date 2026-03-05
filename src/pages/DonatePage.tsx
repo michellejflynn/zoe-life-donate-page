@@ -52,19 +52,19 @@ const impactStats = [
 
 const reasons = [
   {
-    title: "Child-Centred HIV Care",
+    title: "KidzAlive – Child-Centred HIV Care",
     description:
-      "KidzAlive provides groundbreaking chronic care tailored for children navigating HIV, TB, and childhood trauma.",
+      "Over 110,000 children and caregivers reached in South Africa alone, with 595,114 children tested for HIV. The award-winning TalkTool app has reached 28,000+ people with child-friendly counselling.",
   },
   {
-    title: "Award-Winning Innovation",
+    title: "YouThrive – Youth Empowerment",
     description:
-      "Winner of the 2024 Global Mobile Award for Best Mobile Innovation enhancing the lives of children and young people.",
+      "3,000+ young people empowered through health education, GBV prevention, life skills, career guidance, and mental health support since 2022.",
   },
   {
-    title: "Youth Empowerment",
+    title: "Training & Policy Influence",
     description:
-      "YouThrive equips young people aged 13-24 with holistic health education, career guidance, and psychosocial support.",
+      "10,200 healthcare and community health workers trained. Zoë-Life has contributed to WHO and UNICEF guidelines, influencing child-health policy across Africa.",
   },
   {
     title: "Tax-Deductible Impact",
@@ -126,7 +126,7 @@ export default function DonatePage() {
             className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8 font-light"
           >
             From community clinics to national policy, Zoë-Life has proven what works.
-            Now it needs your help to protect what's been built and power the next chapter of impact.
+            Your donation helps sustain programmes that protect, heal, and empower the next generation.
           </motion.p>
 
           <motion.div
@@ -215,7 +215,7 @@ export default function DonatePage() {
                 </h3>
               </div>
               <div className="p-4 text-sm text-muted-foreground border-b border-border">
-                Donate here by card, PayPal or Google/Apple Pay (when available). Or donate by Bank Transfer below to avoid fees.
+                Donate by card, PayPal or Google/Apple Pay (when available), or by Bank Transfer below to avoid fees.
                 <br />
                 Bank transfers and PayPal donations from South African residents are <strong className="text-foreground">tax-deductible</strong>.
               </div>
@@ -293,34 +293,70 @@ export default function DonatePage() {
         </div>
       </section>
 
-      {/* Urgency / What's at Stake */}
+      {/* Programme Highlights */}
       <section className="py-20 bg-foreground">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+        <div className="container mx-auto px-4 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="text-center mb-12"
           >
-            <span className="text-zl-yellow font-bold tracking-widest text-sm uppercase">What's at Stake</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mt-4 mb-6">
-              A Critical Moment: The Impact of Funding Cuts
+            <span className="text-zl-yellow font-bold tracking-widest text-sm uppercase">Our Programmes</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mt-4 mb-4">
+              Over 1 Million Lives Touched
             </h2>
-            <p className="text-primary-foreground/80 text-lg leading-relaxed mb-6">
-              Recent funding cuts have left Zoë-Life's operational budget critically underfunded.
-              Without bridging support, initiatives that reach{" "}
-              <strong className="text-primary-foreground">tens of thousands of children, caregivers, and community health workers</strong>{" "}
-              will be forced to close.
+            <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
+              From community clinics to global policy, Zoë-Life's programmes create lasting change for children, youth, and families.
             </p>
-            <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
-              Among these is the <strong className="text-zl-yellow">KidzAlive TalkTool app</strong>, winner of the
-              2024 GSMA Global Mobile Award — an innovation that's transforming paediatric HIV care across Africa.
-            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "KidzAlive",
+                stat: "110,000+",
+                desc: "Children & caregivers reached with child-centred HIV care, disclosure support, and the award-winning TalkTool app across South Africa and 5 countries.",
+              },
+              {
+                title: "Blue Roof Life Space",
+                stat: "20,900+",
+                desc: "Youth reached with HIV testing, psychosocial support, life skills, and resilience programming since 2016.",
+              },
+              {
+                title: "Career Guidance",
+                stat: "13,500+",
+                desc: "Learners reached across 120 schools with career exploration and mentorship, equipping young people for their futures.",
+              },
+            ].map((prog, i) => (
+              <motion.div
+                key={prog.title}
+                custom={i}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20 text-center"
+              >
+                <div className="text-3xl md:text-4xl font-extrabold text-zl-yellow mb-2">{prog.stat}</div>
+                <h3 className="text-lg font-bold text-primary-foreground mb-2">{prog.title}</h3>
+                <p className="text-primary-foreground/70 text-sm leading-relaxed">{prog.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mt-10"
+          >
             <Button
               size="lg"
               onClick={scrollToForm}
               className="bg-zl-yellow text-secondary-foreground hover:bg-zl-yellow/90 rounded-full px-10 py-6 font-bold text-lg shadow-lg"
             >
-              Help Keep the Momentum Alive
+              Support These Programmes
             </Button>
           </motion.div>
         </div>
