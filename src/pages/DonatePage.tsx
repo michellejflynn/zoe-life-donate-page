@@ -223,7 +223,6 @@ export default function DonatePage() {
                 <iframe
                   src="https://donorbox.org/embed/zoe-life-operations-funding-gap?default_interval=m&enable_auto_scroll=true"
                   name="donorbox"
-                  allowPaymentRequest
                   seamless
                   frameBorder="0"
                   scrolling="no"
@@ -232,7 +231,6 @@ export default function DonatePage() {
                   style={{
                     maxWidth: "500px",
                     minWidth: "250px",
-                    maxHeight: "none !important" as any,
                   }}
                   allow="payment"
                   title="Donate to Zoë-Life"
