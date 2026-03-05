@@ -52,19 +52,19 @@ const impactStats = [
 
 const reasons = [
   {
-    title: "Child-Centred HIV Care",
+    title: "KidzAlive – Child-Centred HIV Care",
     description:
-      "KidzAlive provides groundbreaking chronic care tailored for children navigating HIV, TB, and childhood trauma.",
+      "Over 110,000 children and caregivers reached in South Africa alone, with 595,114 children tested for HIV. The award-winning TalkTool app has reached 28,000+ people with child-friendly counselling.",
   },
   {
-    title: "Award-Winning Innovation",
+    title: "YouThrive – Youth Empowerment",
     description:
-      "Winner of the 2024 Global Mobile Award for Best Mobile Innovation enhancing the lives of children and young people.",
+      "3,000+ young people empowered through health education, GBV prevention, life skills, career guidance, and mental health support since 2022.",
   },
   {
-    title: "Youth Empowerment",
+    title: "Training & Policy Influence",
     description:
-      "YouThrive equips young people aged 13-24 with holistic health education, career guidance, and psychosocial support.",
+      "10,200 healthcare and community health workers trained. Zoë-Life has contributed to WHO and UNICEF guidelines, influencing child-health policy across Africa.",
   },
   {
     title: "Tax-Deductible Impact",
