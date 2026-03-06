@@ -467,7 +467,7 @@ export default function DonatePage() {
             {/* Logo & Social */}
             <div className="lg:col-span-1">
               <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
-                <img src={logo} alt="Zoë-Life" className="h-14 mb-2" />
+                <img src={logoWhite} alt="Zoë-Life" className="h-14 mb-2" />
               </a>
               <p className="text-white/70 text-sm mb-4">building resilient futures</p>
               <div className="flex gap-3 mb-6">
