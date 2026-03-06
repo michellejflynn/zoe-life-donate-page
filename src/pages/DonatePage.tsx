@@ -310,8 +310,8 @@ export default function DonatePage() {
                 viewport={{ once: true }}
                 className="bg-primary/10 rounded-xl p-6 border border-primary/20"
               >
-                <h4 className="font-bold text-foreground mb-3 flex items-center gap-2">
-                  🏦 Bank Transfer (EFT)
+                <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
+                  🏦 Avoid Fees — Donate by Bank Transfer
                 </h4>
                 <div className="text-sm text-muted-foreground space-y-1">
                   <p><strong className="text-foreground">Account:</strong> Zoë-Life iNPC</p>
@@ -324,6 +324,37 @@ export default function DonatePage() {
                     <a href="mailto:donate@zoe-life.org" className="text-primary font-medium hover:underline">
                       donate@zoe-life.org
                     </a>
+                  </p>
+                </div>
+
+                <div className="mt-5 pt-4 border-t border-primary/20">
+                  <p className="text-sm font-semibold text-foreground mb-3">
+                    Tax-Deductible Donations from Abroad
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href="https://www.zoe-life.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                    >
+                      <span className="text-xl leading-none">🇬🇧</span>
+                      Donate from the UK
+                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                    </a>
+                    <a
+                      href="https://www.zoe-life.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                    >
+                      <span className="text-xl leading-none">🇩🇪</span>
+                      Donate from Germany
+                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                    </a>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-2 italic">
+                    These links direct you to partner organisations that enable tax-deductible giving.
                   </p>
                 </div>
               </motion.div>
