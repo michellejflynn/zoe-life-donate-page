@@ -53,24 +53,24 @@ const impactStats = [
 
 const reasons = [
   {
-    title: "KidzAlive – Child-Centred HIV Care",
+    title: "$25 – Career Discovery",
     description:
-      "Over 110,000 children and caregivers reached in South Africa alone, with 595,114 children tested for HIV. The award-winning TalkTool app has reached 28,000+ people with child-friendly counselling.",
+      "Your $25 donation will enable 1 learner to access a career assessment and mentorship, helping them discover their strengths and explore career pathways.",
   },
   {
-    title: "YouThrive – Youth Empowerment",
+    title: "$155 – Healthcare Worker Training",
     description:
-      "3,000+ young people empowered through health education, GBV prevention, life skills, career guidance, and mental health support since 2022.",
+      "Your $155 donation can train one healthcare worker and equip them with child-friendly tools, enabling them to support up to 200 children living with HIV with age-appropriate disclosure services.",
   },
   {
-    title: "Training & Policy Influence",
+    title: "$200 – Health & Life Skills Education",
     description:
-      "10,200 healthcare and community health workers trained. Zoë-Life has contributed to WHO and UNICEF guidelines, influencing child-health policy across Africa.",
+      "Your $200 donation can reach a class of 50 learners, providing them with sexual and reproductive health education, essential life skills, and career guidance that empower them to make informed decisions about their health, future, and opportunities.",
   },
   {
-    title: "Tax-Deductible Impact",
+    title: "$1,000 – Comprehensive Programme Support",
     description:
-      "Bank transfers and PayPal donations from South African residents are tax-deductible. Every rand makes a difference.",
+      "Your $1,000 donation can reach a class of 50 learners, providing them with sexual and reproductive health education, essential life skills, and career guidance that empower them to make informed decisions about their health, future, and opportunities.",
   },
 ];
 
