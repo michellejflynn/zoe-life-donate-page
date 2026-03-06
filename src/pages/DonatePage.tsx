@@ -4,6 +4,7 @@ import { Heart, Users, Globe, Award, ChevronDown, ExternalLink } from "lucide-re
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
 import logo from "@/assets/zl-logo.webp";
+import logoWhite from "@/assets/zl-logo-white.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -362,20 +363,100 @@ export default function DonatePage() {
         </div>
       </section>
 
-      {/* Testimonial / Trust */}
-      <section className="py-16 bg-accent">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
-          <motion.blockquote
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="text-xl md:text-2xl italic text-foreground font-light leading-relaxed"
-          >
-            "Zoë-Life is focused on bringing wholeness to children, youth and families.
-            From its beginnings as a responder to the HIV crisis, it has grown into a vibrant
-            social innovation consultancy creating impactful solutions with a global reach."
-          </motion.blockquote>
-          <p className="mt-6 text-muted-foreground font-semibold">— Zoë-Life Organisation</p>
+      {/* Your Gift, Responsibly Spent */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-5xl font-extrabold text-foreground leading-tight">
+                Your gift,
+                <br />
+                responsibly
+                <br />
+                spent
+              </h2>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <p className="text-muted-foreground">
+                Every donation makes a real impact.{" "}
+                <strong className="text-foreground">
+                  We're proud to say 80% of every rand goes directly to delivering
+                  life-changing programmes.
+                </strong>{" "}
+                The rest supports essential fundraising and operations to keep our work going.
+              </p>
+
+              {/* Donut Chart */}
+              <div className="flex justify-center">
+                <div className="relative w-56 h-56">
+                  <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
+                    {/* Programmes 80% */}
+                    <circle
+                      cx="50" cy="50" r="38"
+                      fill="none"
+                      stroke="hsl(var(--primary))"
+                      strokeWidth="18"
+                      strokeDasharray={`${80 * 2.388} ${100 * 2.388}`}
+                      strokeDashoffset="0"
+                    />
+                    {/* Fundraising 14.5% */}
+                    <circle
+                      cx="50" cy="50" r="38"
+                      fill="none"
+                      stroke="hsl(var(--zl-teal))"
+                      strokeWidth="18"
+                      strokeDasharray={`${14.5 * 2.388} ${100 * 2.388}`}
+                      strokeDashoffset={`${-80 * 2.388}`}
+                    />
+                    {/* Admin 5.5% */}
+                    <circle
+                      cx="50" cy="50" r="38"
+                      fill="none"
+                      stroke="hsl(var(--zl-yellow))"
+                      strokeWidth="18"
+                      strokeDasharray={`${5.5 * 2.388} ${100 * 2.388}`}
+                      strokeDashoffset={`${-(80 + 14.5) * 2.388}`}
+                    />
+                  </svg>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 rounded-full bg-background" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Legend */}
+              <div className="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <div className="text-3xl font-extrabold text-primary">80%</div>
+                  <div className="text-xs font-semibold text-primary mt-1">
+                    Programmes &<br />Community Impact
+                  </div>
+                </div>
+                <div>
+                  <div className="text-3xl font-extrabold text-zl-teal">14.5%</div>
+                  <div className="text-xs font-semibold text-zl-teal mt-1">
+                    Fundraising
+                  </div>
+                </div>
+                <div>
+                  <div className="text-3xl font-extrabold text-secondary">5.5%</div>
+                  <div className="text-xs font-semibold text-secondary mt-1">
+                    Admin Cost
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -386,7 +467,7 @@ export default function DonatePage() {
             {/* Logo & Social */}
             <div className="lg:col-span-1">
               <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
-                <img src={logo} alt="Zoë-Life" className="h-14 mb-2" />
+                <img src={logoWhite} alt="Zoë-Life" className="h-14 mb-2" />
               </a>
               <p className="text-white/70 text-sm mb-4">building resilient futures</p>
               <div className="flex gap-3 mb-6">
