@@ -4,6 +4,7 @@ import { Heart, Users, Globe, Award, ChevronDown, ExternalLink } from "lucide-re
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
 import logo from "@/assets/zl-logo.webp";
+import logoWhite from "@/assets/zl-logo-white.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
