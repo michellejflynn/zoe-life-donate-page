@@ -328,7 +328,7 @@ export default function DonatePage() {
                 </div>
 
                 <div className="mt-5 pt-4 border-t border-primary/20">
-                  <p className="text-sm font-semibold text-foreground mb-3">
+                  <p className="text-base font-bold text-foreground mb-3">
                     Tax-Deductible Donations from Abroad
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
