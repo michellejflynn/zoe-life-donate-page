@@ -136,7 +136,7 @@ export default function DonatePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-16">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-28">
         <div className="absolute inset-0">
           <img
             src={heroImage}
