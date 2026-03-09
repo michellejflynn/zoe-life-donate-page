@@ -70,7 +70,7 @@ const reasons = [
   {
     title: "R3,350 ($200) – Classroom Transformation",
     description:
-      "Transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
+      "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
     whyItMatters:
       "In South Africa, one in three pregnant teenagers never returns to school, 46% of youth are unemployed, and HIV rates among youth remain high. The common thread is a lack of access to quality education, health information, and guidance at the right age.",
   },
