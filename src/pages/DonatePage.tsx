@@ -333,27 +333,6 @@ export default function DonatePage() {
                 </button>
               </div>
 
-              {/* Sponsorship Cards */}
-              <div className="border-t border-border p-6 space-y-6">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center space-y-3">
-                    <h4 className="text-lg font-bold text-foreground leading-tight">
-                      <span className="underline decoration-zl-yellow decoration-[3px] underline-offset-2">Sponsor an Income Generating Project</span>
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Help us empower our Grandmothers and Youth by sponsoring their journey towards self-sustainability through food cultivation or small business ventures.
-                    </p>
-                  </div>
-                  <div className="text-center space-y-3">
-                    <h4 className="text-lg font-bold text-foreground leading-tight">
-                      <span className="underline decoration-primary decoration-[3px] underline-offset-2">Sponsor a Youth Development Class</span>
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Invest in the future by sponsoring educational and skill-building classes for young people, equipping them with the tools they need to succeed.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </motion.div>
 
             {/* Why Give */}
