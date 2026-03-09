@@ -542,7 +542,7 @@ export default function DonatePage() {
                 className="mt-6 bg-primary text-primary-foreground hover:bg-zl-green-dark text-lg px-8 py-6 rounded-full font-bold shadow-lg"
               >
                 <Heart className="w-5 h-5 mr-2" />
-                Make a Donation
+                Give Today
               </Button>
             </motion.div>
 
