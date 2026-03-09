@@ -344,7 +344,7 @@ export default function DonatePage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
-                      href="https://www.zoe-life.org/"
+                      href="https://www.ukfundforcharities.org/donate/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
