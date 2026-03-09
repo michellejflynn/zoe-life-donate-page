@@ -54,24 +54,25 @@ const impactStats = [
 
 const reasons = [
   {
-    title: "$25 – Career Discovery",
+    title: "R420 ($25) – Career Assessment & Mentorship",
     description:
-      "Your $25 donation will enable 1 learner to access a career assessment and mentorship, helping them discover their strengths and explore career pathways.",
+      "Provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
+    whyItMatters:
+      "Youth unemployment in South Africa sits at an alarmingly high 46% among 15–34 year olds, with lack of career guidance being a key driver.",
   },
   {
-    title: "$155 – Healthcare Worker Training",
+    title: "R2,500 ($155) – Healthcare Worker Training",
     description:
-      "Your $155 donation can train one healthcare worker and equip them with child-friendly tools, enabling them to support up to 200 children living with HIV with age-appropriate disclosure services.",
+      "Trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
+    whyItMatters:
+      "South Africa has an estimated 150,000 children living with HIV — yet fewer than half are aware of their own status. Children who don't know their diagnosis are far less likely to adhere to treatment, and most healthcare workers have no formal training in how to have that conversation.",
   },
   {
-    title: "$200 – Health & Life Skills Education",
+    title: "R3,350 ($200) – Classroom Transformation",
     description:
-      "Your $200 donation can reach a class of 50 learners, providing them with sexual and reproductive health education, essential life skills, and career guidance that empower them to make informed decisions about their health, future, and opportunities.",
-  },
-  {
-    title: "$1,000 – Comprehensive Programme Support",
-    description:
-      "Your $1,000 donation can reach a class of 50 learners, providing them with sexual and reproductive health education, essential life skills, and career guidance that empower them to make informed decisions about their health, future, and opportunities.",
+      "Transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
+    whyItMatters:
+      "In South Africa, one in three pregnant teenagers never returns to school, 46% of youth are unemployed, and HIV rates among youth remain high. The common thread is a lack of access to quality education, health information, and guidance at the right age.",
   },
 ];
 
@@ -357,7 +358,8 @@ export default function DonatePage() {
                   className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-lg transition-shadow"
                 >
                   <h4 className="font-bold text-foreground mb-2 text-lg">{reason.title}</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{reason.description}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">{reason.description}</p>
+                  <p className="text-sm leading-relaxed"><span className="font-semibold text-primary">Why this matters:</span> <span className="text-muted-foreground">{reason.whyItMatters}</span></p>
                 </motion.div>
               ))}
 
