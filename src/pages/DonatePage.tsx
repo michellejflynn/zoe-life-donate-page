@@ -358,7 +358,8 @@ export default function DonatePage() {
                   className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-lg transition-shadow"
                 >
                   <h4 className="font-bold text-foreground mb-2 text-lg">{reason.title}</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{reason.description}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">{reason.description}</p>
+                  <p className="text-sm leading-relaxed"><span className="font-semibold text-primary">Why this matters:</span> <span className="text-muted-foreground">{reason.whyItMatters}</span></p>
                 </motion.div>
               ))}
 
