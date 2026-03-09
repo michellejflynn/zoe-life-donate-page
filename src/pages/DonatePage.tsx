@@ -63,7 +63,7 @@ const reasons = [
   },
   {
     title: "R2,500 ($155) – Healthcare Worker Training",
-    icon: Stethoscope,
+    icon: HeartHandshake,
     description:
       "R2,500 trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
     whyItMatters:
