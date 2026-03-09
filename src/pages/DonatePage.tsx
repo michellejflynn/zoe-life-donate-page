@@ -346,7 +346,7 @@ export default function DonatePage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-primary/10 rounded-xl p-6 border border-primary/20 max-w-md"
+              className="bg-card rounded-xl p-6 border border-border max-w-md shadow-md"
             >
               <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
                 🏦 Avoid Fees — Donate by Bank Transfer
@@ -382,7 +382,7 @@ export default function DonatePage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-card rounded-xl p-6 border border-border max-w-md shadow-md"
+              className="bg-primary/10 rounded-xl p-6 border border-primary/20 max-w-md"
             >
               <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
                 🌍 Tax-Deductible Donations from Abroad
