@@ -55,6 +55,7 @@ const impactStats = [
 const reasons = [
   {
     title: "R420 ($25) – Career Assessment & Mentorship",
+    icon: Compass,
     description:
       "R420 provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
     whyItMatters:
@@ -62,6 +63,7 @@ const reasons = [
   },
   {
     title: "R2,500 ($155) – Healthcare Worker Training",
+    icon: Stethoscope,
     description:
       "R2,500 trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
     whyItMatters:
@@ -69,6 +71,7 @@ const reasons = [
   },
   {
     title: "R3,350 ($200) – Classroom Transformation",
+    icon: GraduationCap,
     description:
       "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
     whyItMatters:
