@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Heart, Users, Globe, Award, ChevronDown, ExternalLink } from "lucide-react";
+import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send } from "lucide-react";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
 import logo from "@/assets/zl-logo.webp";
@@ -313,19 +314,34 @@ export default function DonatePage() {
                 <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
                   🏦 Avoid Fees — Donate by Bank Transfer
                 </h4>
-                <div className="text-sm text-muted-foreground space-y-1">
-                  <p><strong className="text-foreground">Account:</strong> Zoë-Life iNPC</p>
-                  <p><strong className="text-foreground">Bank:</strong> First National Bank (FNB)</p>
-                  <p><strong className="text-foreground">Account No:</strong> 62785888605</p>
-                  <p><strong className="text-foreground">Branch Code:</strong> 250655</p>
-                  <p><strong className="text-foreground">Reference:</strong> Your Name + Donation</p>
-                  <p className="mt-2 text-xs italic">
-                    Email proof of payment to{" "}
-                    <a href="mailto:donate@zoe-life.org" className="text-primary font-medium hover:underline">
-                      donate@zoe-life.org
-                    </a>
-                  </p>
-                </div>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Submit your details here then check your email for instructions. Bank transfers from South African residents are <strong className="text-foreground">tax-deductible</strong>.
+                </p>
+
+                <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
+                  <Input
+                    type="email"
+                    placeholder="EMAIL"
+                    className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
+                  />
+                  <Input
+                    type="text"
+                    placeholder="CURRENCY"
+                    className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
+                  />
+                  <Input
+                    type="text"
+                    placeholder="AMOUNT"
+                    className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
+                  />
+                  <Button
+                    type="submit"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full py-6 text-base font-bold"
+                  >
+                    <Send className="w-4 h-4 mr-2" />
+                    Send me the details
+                  </Button>
+                </form>
 
                 <div className="mt-5 pt-4 border-t border-primary/20">
                   <p className="text-base font-bold text-foreground mb-3">
