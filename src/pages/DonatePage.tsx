@@ -403,6 +403,7 @@ export default function DonatePage() {
                 </p>
               </div>
             </motion.div>
+            </div>
 
             {/* Why Give */}
             <div className="space-y-6">
