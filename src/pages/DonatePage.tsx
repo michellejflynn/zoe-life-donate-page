@@ -322,9 +322,28 @@ export default function DonatePage() {
                     placeholder="EMAIL"
                     className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
                   />
+                  <select
+                    defaultValue="ZAR"
+                    className="w-full h-10 px-3 rounded-md bg-card border border-border/60 text-sm text-foreground font-medium tracking-wider"
+                  >
+                    <option value="ZAR">South African Rand (ZAR)</option>
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                  </select>
+                  <div className="flex flex-wrap gap-2">
+                    {["50", "100", "250", "500", "1000", "3000"].map((amt) => (
+                      <button
+                        key={amt}
+                        type="button"
+                        className="px-4 py-2 rounded-full border border-border/60 bg-card text-sm font-medium text-foreground hover:bg-primary/10 hover:border-primary/40 transition-all"
+                      >
+                        R{amt}
+                      </button>
+                    ))}
+                  </div>
                   <Input
                     type="text"
-                    placeholder="AMOUNT"
+                    placeholder="OTHER AMOUNT"
                     className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
                   />
                   <Button
