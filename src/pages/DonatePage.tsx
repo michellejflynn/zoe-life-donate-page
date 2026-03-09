@@ -54,7 +54,7 @@ const impactStats = [
 
 const reasons = [
   {
-    title: "R420 ($25) – Career Assessment & Mentorship",
+    title: "R420 provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
     icon: Compass,
     description:
       "R420 provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
@@ -62,7 +62,7 @@ const reasons = [
       "Youth unemployment in South Africa sits at an alarmingly high 46% among 15–34 year olds, with lack of career guidance being a key driver.",
   },
   {
-    title: "R2,500 ($155) – Healthcare Worker Training",
+    title: "R2,500 trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
     icon: HeartHandshake,
     description:
       "R2,500 trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
@@ -70,7 +70,7 @@ const reasons = [
       "South Africa has an estimated 150,000 children living with HIV — yet fewer than half are aware of their own status. Children who don't know their diagnosis are far less likely to adhere to treatment, and most healthcare workers have no formal training in how to have that conversation.",
   },
   {
-    title: "R3,350 ($200) – Classroom Transformation",
+    title: "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
     icon: Dumbbell,
     description:
       "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
