@@ -71,7 +71,7 @@ const reasons = [
   },
   {
     title: "R3,350 ($200) – Classroom Transformation",
-    icon: Shield,
+    icon: Dumbbell,
     description:
       "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
     whyItMatters:
