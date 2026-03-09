@@ -255,7 +255,7 @@ export default function DonatePage() {
                 </h3>
               </div>
               <div className="p-4 text-sm text-muted-foreground border-b border-border">
-                Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>.
+                Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>ame="text-foreground">tax-deductible</strong>.
               </div>
               <div className="p-2">
                 <iframe
@@ -313,7 +313,7 @@ export default function DonatePage() {
                   🏦 Avoid Fees — Donate by Bank Transfer
                 </h4>
                 <p className="text-sm text-muted-foreground mb-6">
-                  Bank transfers from South African residents incur no fees and are tax-deductible. Submit this form then check your email for instructions.
+                  Bank transfers from S<strong className="text-foreground">tax-deductible</strong>esidents incur no fees and are tax-deductible. Submit this form then check your email for instructions.
                 </p>
 
                 <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
