@@ -56,7 +56,7 @@ const reasons = [
   {
     title: "R420 ($25) – Career Assessment & Mentorship",
     description:
-      "Provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
+      "R420 provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
     whyItMatters:
       "Youth unemployment in South Africa sits at an alarmingly high 46% among 15–34 year olds, with lack of career guidance being a key driver.",
   },
