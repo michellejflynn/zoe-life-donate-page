@@ -410,6 +410,43 @@ export default function DonatePage() {
                   <p className="text-sm leading-relaxed"><span className="font-semibold text-primary">Why this matters:</span> <span className="text-muted-foreground">{reason.whyItMatters}</span></p>
                 </motion.div>
               ))}
+
+              {/* Tax-Deductible Donations from Abroad */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-primary/10 rounded-xl p-6 border border-primary/20"
+              >
+                <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
+                  🌍 Tax-Deductible Donations from Abroad
+                </h4>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="https://www.ukfundforcharities.org/donate/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                  >
+                    <span className="text-xl leading-none">🇬🇧</span>
+                    Donate from the UK
+                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                  </a>
+                  <a
+                    href="http://dsz-internationalgiving.org/spendenabwicklung/fuer-spender/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                  >
+                    <span className="text-xl leading-none">🇩🇪</span>
+                    Donate from Germany
+                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                  </a>
+                </div>
+                <p className="text-xs text-muted-foreground mt-3 italic">
+                  These links direct you to partner organisations that enable tax-deductible giving.
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
