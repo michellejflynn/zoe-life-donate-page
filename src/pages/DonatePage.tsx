@@ -248,109 +248,86 @@ export default function DonatePage() {
               transition={{ duration: 0.6 }}
               className="bg-card rounded-2xl shadow-xl overflow-hidden border border-border max-w-md"
             >
-              <div className="bg-primary px-6 py-4">
-                <h3 className="text-xl font-bold text-primary-foreground flex items-center gap-2">
-                  <Heart className="w-5 h-5" />
-                  Donate to Zoë-Life
+              <div className="bg-primary px-6 py-4 flex items-center justify-between">
+                <h3 className="text-lg font-semibold text-primary-foreground">
+                  Choose amount
                 </h3>
-              </div>
-              <div className="p-4 text-sm text-muted-foreground border-b border-border">
-                Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>.
+                <div className="flex items-center gap-2 text-primary-foreground/70">
+                  <span className="text-primary-foreground">🔒</span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-primary-foreground/50" />
+                  <span className="w-2.5 h-2.5 rounded-full border border-primary-foreground/50" />
+                  <span className="w-2.5 h-2.5 rounded-full border border-primary-foreground/50" />
+                  <span className="ml-1">→</span>
+                </div>
               </div>
               <div className="p-6 space-y-6">
                 {/* Frequency Toggle */}
-                <div className="flex rounded-lg overflow-hidden border border-border">
-                  {["One-time", "Monthly", "Quarterly", "Annually"].map((freq) => (
+                <div className="flex justify-center">
+                  <div className="inline-flex rounded-lg border border-border overflow-hidden">
+                    {["One-time", "Monthly", "Quarterly"].map((freq) => (
+                      <button
+                        key={freq}
+                        className={`px-5 py-2.5 text-sm font-medium transition-colors ${
+                          freq === "Monthly"
+                            ? "border-2 border-primary text-primary bg-card"
+                            : "bg-card text-muted-foreground hover:bg-muted"
+                        }`}
+                      >
+                        {freq === "Monthly" && "❤️ "}
+                        {freq}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <p className="text-center text-sm text-muted-foreground">
+                  You can log in to edit your recurring donation any time <span className="inline-block w-4 h-4 rounded-full border border-muted-foreground text-xs text-center leading-4 align-middle">?</span>
+                </p>
+
+                {/* Amount Grid */}
+                <div className="grid grid-cols-3 gap-3">
+                  {[
+                    { label: "ZAR", amount: "200" },
+                    { label: "ZAR", amount: "500" },
+                    { label: "ZAR", amount: "800" },
+                    { label: "ZAR", amount: "2,000" },
+                    { label: "ZAR", amount: "8,000" },
+                    { label: "ZAR", amount: "20,000" },
+                  ].map((item) => (
                     <button
-                      key={freq}
-                      className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
-                        freq === "Monthly"
-                          ? "bg-primary text-primary-foreground"
-                          : "bg-card text-muted-foreground hover:bg-muted"
-                      }`}
+                      key={item.amount}
+                      className="py-5 rounded-xl border border-border bg-card text-foreground hover:border-primary/50 transition-colors flex flex-col items-center justify-center gap-0.5"
                     >
-                      {freq}
+                      <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{item.label}</span>
+                      <span className="text-lg font-bold">{item.amount}</span>
                     </button>
                   ))}
                 </div>
 
+                {/* Custom Amount */}
+                <div className="relative">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xs font-medium text-muted-foreground uppercase tracking-wider">ZAR</span>
+                  <input
+                    type="text"
+                    placeholder="Custom Amount"
+                    className="w-full rounded-xl border border-border bg-card pl-14 pr-4 py-4 text-lg text-foreground placeholder:text-muted-foreground/40"
+                  />
+                </div>
+
                 {/* Currency Selector */}
                 <div>
-                  <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Currency</label>
-                  <select className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground">
+                  <label className="text-sm text-muted-foreground mb-1.5 block">Currency</label>
+                  <select className="w-full rounded-xl border border-border bg-card px-4 py-3.5 text-sm text-foreground">
                     <option value="ZAR">South African Rand (ZAR)</option>
                     <option value="USD">US Dollar (USD)</option>
                     <option value="EUR">Euro (EUR)</option>
                   </select>
                 </div>
 
-                {/* Amount Grid */}
-                <div>
-                  <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 block">Select Amount</label>
-                  <div className="grid grid-cols-3 gap-2">
-                    {["R100", "R250", "R500", "R1,000", "R2,500", "R5,000"].map((amt) => (
-                      <button
-                        key={amt}
-                        className={`py-3 rounded-lg text-sm font-semibold border transition-colors ${
-                          amt === "R500"
-                            ? "bg-primary text-primary-foreground border-primary"
-                            : "bg-card text-foreground border-border hover:border-primary/50"
-                        }`}
-                      >
-                        {amt}
-                      </button>
-                    ))}
-                  </div>
-                  <div className="mt-3">
-                    <div className="relative">
-                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm font-medium">R</span>
-                      <input
-                        type="text"
-                        placeholder="Other amount"
-                        className="w-full rounded-lg border border-border bg-card pl-7 pr-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Personal Info */}
-                <div className="space-y-3">
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">First Name</label>
-                      <input className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground" />
-                    </div>
-                    <div>
-                      <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Last Name</label>
-                      <input className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Email</label>
-                    <input type="email" className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground" />
-                  </div>
-                </div>
-
-                {/* Dedicate Checkbox */}
-                <label className="flex items-center gap-2 text-sm text-muted-foreground cursor-pointer">
-                  <input type="checkbox" className="rounded border-border" />
-                  Dedicate this donation
-                </label>
-
-                {/* Comment */}
-                <div>
-                  <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Comment (optional)</label>
-                  <textarea rows={2} className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground resize-none" />
-                </div>
-
-                {/* Donate Button */}
-                <button className="w-full bg-primary text-primary-foreground font-bold py-3.5 rounded-lg text-lg hover:opacity-90 transition-opacity">
-                  Donate R500
+                {/* Next Button */}
+                <button className="w-full bg-primary text-primary-foreground font-semibold py-4 rounded-xl text-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+                  Next <span>→</span>
                 </button>
-
-                <p className="text-xs text-center text-muted-foreground">
-                  Secured by SSL encryption
-                </p>
               </div>
             </motion.div>
 
