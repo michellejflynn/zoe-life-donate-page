@@ -63,7 +63,7 @@ const reasons = [
   {
     title: "R2,500 ($155) – Healthcare Worker Training",
     description:
-      "Trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
+      "R2,500 trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
     whyItMatters:
       "South Africa has an estimated 150,000 children living with HIV — yet fewer than half are aware of their own status. Children who don't know their diagnosis are far less likely to adhere to treatment, and most healthcare workers have no formal training in how to have that conversation.",
   },
