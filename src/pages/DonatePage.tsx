@@ -628,7 +628,7 @@ export default function DonatePage() {
       {/* Footer */}
       <footer className="bg-[#5a5a5a] py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Logo & Social */}
             <div className="lg:col-span-2">
               <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
