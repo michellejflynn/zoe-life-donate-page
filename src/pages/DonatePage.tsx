@@ -628,7 +628,7 @@ export default function DonatePage() {
       {/* Footer */}
       <footer className="bg-[#5a5a5a] py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Logo & Social */}
             <div className="lg:col-span-2">
               <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
@@ -693,7 +693,7 @@ export default function DonatePage() {
               </ul>
             </div>
 
-            {/* KidzAlive */}
+            {/* KidzAlive + Policies and Terms */}
             <div>
               <h4 className="text-white font-bold text-lg mb-4">KidzAlive</h4>
               <ul className="space-y-2 text-white/70 text-sm">
@@ -702,11 +702,7 @@ export default function DonatePage() {
                 <li><a href="https://www.zoe-life.org/kidzalive-caregiver-connect" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Caregiver Connect</a></li>
                 <li><a href="https://www.zoe-life.org/kidzalive-courses" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Courses</a></li>
               </ul>
-            </div>
-
-            {/* Policies and Terms */}
-            <div>
-              <h4 className="text-white font-bold text-lg mb-4">Policies and Terms</h4>
+              <h4 className="text-white font-bold text-lg mt-8 mb-4">Policies and Terms</h4>
               <ul className="space-y-2 text-white/70 text-sm">
                 <li><a href="https://www.zoe-life.org/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Privacy Policy</a></li>
                 <li><a href="https://www.zoe-life.org/social-media-terms-of-use" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Social Media Terms of Use</a></li>
