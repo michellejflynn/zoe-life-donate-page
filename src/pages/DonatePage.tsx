@@ -477,9 +477,9 @@ export default function DonatePage() {
                 desc: "Children & caregivers reached with child-centred HIV care, disclosure support, and the award-winning TalkTool app across South Africa and 5 countries.",
               },
               {
-                title: "Blue Roof Life Space",
-                stat: "20,900+",
-                desc: "Youth reached with HIV testing, psychosocial support, life skills, and resilience programming since 2016.",
+                title: "YouThrive",
+                stat: "3,000+",
+                desc: "Youth reached with health education, GBV prevention, life skills, career guidance, and mental health support since 2022.",
               },
               {
                 title: "Career Guidance",
