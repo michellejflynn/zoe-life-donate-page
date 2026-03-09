@@ -375,36 +375,43 @@ export default function DonatePage() {
                 </Button>
               </form>
 
-              <div className="mt-5 pt-4 border-t border-primary/20">
-                <p className="text-base font-bold text-foreground mb-3">
-                  Tax-Deductible Donations from Abroad
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a
-                    href="https://www.ukfundforcharities.org/donate/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
-                  >
-                    <span className="text-xl leading-none">🇬🇧</span>
-                    Donate from the UK
-                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
-                  </a>
-                  <a
-                    href="http://dsz-internationalgiving.org/spendenabwicklung/fuer-spender/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
-                  >
-                    <span className="text-xl leading-none">🇩🇪</span>
-                    Donate from Germany
-                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
-                  </a>
-                </div>
-                <p className="text-xs text-muted-foreground mt-2 italic">
-                  These links direct you to partner organisations that enable tax-deductible giving.
-                </p>
+            </motion.div>
+
+            {/* Tax-Deductible Donations from Abroad */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-card rounded-xl p-6 border border-border max-w-md shadow-md"
+            >
+              <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
+                🌍 Tax-Deductible Donations from Abroad
+              </h4>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://www.ukfundforcharities.org/donate/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-muted rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                >
+                  <span className="text-xl leading-none">🇬🇧</span>
+                  Donate from the UK
+                  <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                </a>
+                <a
+                  href="http://dsz-internationalgiving.org/spendenabwicklung/fuer-spender/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-muted rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                >
+                  <span className="text-xl leading-none">🇩🇪</span>
+                  Donate from Germany
+                  <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                </a>
               </div>
+              <p className="text-xs text-muted-foreground mt-3 italic">
+                These links direct you to partner organisations that enable tax-deductible giving.
+              </p>
             </motion.div>
             </div>
 
