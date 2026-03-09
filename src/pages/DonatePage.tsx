@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Heart, Users, Globe, Award, ChevronDown, ExternalLink } from "lucide-react";
+import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send } from "lucide-react";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
 import logo from "@/assets/zl-logo.webp";
