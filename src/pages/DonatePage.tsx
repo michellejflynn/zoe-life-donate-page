@@ -429,7 +429,12 @@ export default function DonatePage() {
                   viewport={{ once: true }}
                   className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-lg transition-shadow"
                 >
-                  <h4 className="font-bold text-foreground mb-2 text-lg">{reason.title}</h4>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-2 rounded-lg bg-primary/10">
+                      <reason.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <h4 className="font-bold text-foreground text-lg">{reason.title}</h4>
+                  </div>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-3">{reason.description}</p>
                   <p className="text-sm leading-relaxed"><span className="font-semibold text-primary">Why this matters:</span> <span className="text-muted-foreground">{reason.whyItMatters}</span></p>
                 </motion.div>
