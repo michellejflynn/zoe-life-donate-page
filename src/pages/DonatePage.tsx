@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send } from "lucide-react";
+import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send, Compass, Stethoscope, GraduationCap } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
@@ -55,6 +55,7 @@ const impactStats = [
 const reasons = [
   {
     title: "R420 ($25) – Career Assessment & Mentorship",
+    icon: Compass,
     description:
       "R420 provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
     whyItMatters:
@@ -62,6 +63,7 @@ const reasons = [
   },
   {
     title: "R2,500 ($155) – Healthcare Worker Training",
+    icon: Stethoscope,
     description:
       "R2,500 trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
     whyItMatters:
@@ -69,6 +71,7 @@ const reasons = [
   },
   {
     title: "R3,350 ($200) – Classroom Transformation",
+    icon: GraduationCap,
     description:
       "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
     whyItMatters:
@@ -426,7 +429,12 @@ export default function DonatePage() {
                   viewport={{ once: true }}
                   className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-lg transition-shadow"
                 >
-                  <h4 className="font-bold text-foreground mb-2 text-lg">{reason.title}</h4>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-2 rounded-lg bg-primary/10">
+                      <reason.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <h4 className="font-bold text-foreground text-lg">{reason.title}</h4>
+                  </div>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-3">{reason.description}</p>
                   <p className="text-sm leading-relaxed"><span className="font-semibold text-primary">Why this matters:</span> <span className="text-muted-foreground">{reason.whyItMatters}</span></p>
                 </motion.div>
