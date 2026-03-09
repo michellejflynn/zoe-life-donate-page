@@ -381,7 +381,7 @@ export default function DonatePage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-zl-yellow font-bold tracking-widest text-sm uppercase">Our Programmes</span>
+            <span className="text-zl-yellow font-bold tracking-widest text-sm uppercase">Our Impact</span>
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mt-4 mb-4">
               Over 1 Million Lives Touched
             </h2>
