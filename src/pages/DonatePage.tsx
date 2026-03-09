@@ -362,7 +362,8 @@ export default function DonatePage() {
                       <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
                     </a>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-2<strong className="text-foreground">tax-deductible</strong>                These links direct you to partner organisations that enable tax-deductible giving.
+                  <p className="text-xs text-muted-foreground mt-2 italic">
+                    These links direct you to partner organisations that enable <strong className="text-foreground">tax-deductible</strong> giving.
                   </p>
                 </div>
               </motion.div>
