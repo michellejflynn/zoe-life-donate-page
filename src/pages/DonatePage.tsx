@@ -354,7 +354,7 @@ export default function DonatePage() {
                       <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
                     </a>
                     <a
-                      href="https://www.zoe-life.org/"
+                      href="http://dsz-internationalgiving.org/spendenabwicklung/fuer-spender/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
