@@ -363,7 +363,7 @@ export default function DonatePage() {
                     </a>
                   </div>
                   <p className="text-xs text-muted-foreground mt-2 italic">
-                    These links direct you to partner organisations that enable <strong className="text-foreground">tax-deductible</strong> giving.
+                    These links direct you to partner organisations that enable tax-deductible giving.
                   </p>
                 </div>
               </motion.div>
