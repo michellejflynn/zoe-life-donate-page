@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send, Compass, HeartHandshake, Shield } from "lucide-react";
+import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send, Compass, HeartHandshake, Dumbbell } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
@@ -71,7 +71,7 @@ const reasons = [
   },
   {
     title: "R3,350 ($200) – Classroom Transformation",
-    icon: Shield,
+    icon: Dumbbell,
     description:
       "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
     whyItMatters:
