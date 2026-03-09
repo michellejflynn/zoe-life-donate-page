@@ -255,7 +255,7 @@ export default function DonatePage() {
                 </h3>
               </div>
               <div className="p-4 text-sm text-muted-foreground border-b border-border">
-                Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>ame="text-foreground">tax-deductible</strong>ame="text-foreground">tax-deductible</strong>.
+                Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>.
               </div>
               <div className="p-2">
                 <iframe
