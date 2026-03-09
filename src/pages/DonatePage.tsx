@@ -402,7 +402,7 @@ export default function DonatePage() {
                   href="http://dsz-internationalgiving.org/spendenabwicklung/fuer-spender/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-muted rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                  className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
                 >
                   <span className="text-xl leading-none">🇩🇪</span>
                   Donate from Germany
