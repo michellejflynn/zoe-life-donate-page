@@ -255,7 +255,7 @@ export default function DonatePage() {
                 </h3>
               </div>
               <div className="p-4 text-sm text-muted-foreground border-b border-border">
-                Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>ame="text-foreground">tax-deductible</strong>.
+                Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>ame="text-foreground">tax-deductible</strong>ame="text-foreground">tax-deductible</strong>.
               </div>
               <div className="p-2">
                 <iframe
@@ -312,8 +312,7 @@ export default function DonatePage() {
                 <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
                   🏦 Avoid Fees — Donate by Bank Transfer
                 </h4>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Bank transfers from S<strong className="text-foreground">tax-deductible</strong>esidents incur no fees and are tax-deductible. Submit this form then check your email for instructions.
+                <p className="text-sm text-muted-foreground m<strong className="text-foreground">tax-deductible</strong>          Bank transfers from S<strong className="text-foreground">tax-deductible</strong>esidents incur no fees and are tax-deductible. Submit this form then check your email for instructions.
                 </p>
 
                 <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
@@ -362,8 +361,7 @@ export default function DonatePage() {
                       <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
                     </a>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-2 italic">
-                    These links direct you to partner organisations that enable tax-deductible giving.
+                  <p className="text-xs text-muted-foreground mt-2<strong className="text-foreground">tax-deductible</strong>                These links direct you to partner organisations that enable tax-deductible giving.
                   </p>
                 </div>
               </motion.div>
