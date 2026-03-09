@@ -241,6 +241,8 @@ export default function DonatePage() {
           </motion.div>
 
           <div className="grid lg:grid-cols-[auto_1fr] gap-12 items-start max-w-6xl mx-auto">
+            {/* Left Column */}
+            <div className="space-y-6">
             {/* Donorbox Embed */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
