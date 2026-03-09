@@ -241,6 +241,8 @@ export default function DonatePage() {
           </motion.div>
 
           <div className="grid lg:grid-cols-[auto_1fr] gap-12 items-start max-w-6xl mx-auto">
+            {/* Left Column */}
+            <div className="space-y-6">
             {/* Donorbox Embed */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -336,6 +338,73 @@ export default function DonatePage() {
 
             </motion.div>
 
+            {/* Bank Transfer Info - below donation form in left column */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-primary/10 rounded-xl p-6 border border-primary/20 max-w-md"
+            >
+              <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
+                🏦 Avoid Fees — Donate by Bank Transfer
+              </h4>
+              <p className="text-sm text-muted-foreground mb-6">
+                Bank transfers from South African residents incur no fees and are <strong className="text-foreground">tax-deductible</strong>. Submit this form then check your email for instructions.
+              </p>
+
+              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
+                <Input
+                  type="email"
+                  placeholder="EMAIL"
+                  className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
+                />
+                <Input
+                  type="text"
+                  placeholder="AMOUNT"
+                  className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
+                />
+                <Button
+                  type="submit"
+                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full py-6 text-base font-bold"
+                >
+                  <Send className="w-4 h-4 mr-2" />
+                  Send me the details
+                </Button>
+              </form>
+
+              <div className="mt-5 pt-4 border-t border-primary/20">
+                <p className="text-base font-bold text-foreground mb-3">
+                  Tax-Deductible Donations from Abroad
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="https://www.ukfundforcharities.org/donate/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                  >
+                    <span className="text-xl leading-none">🇬🇧</span>
+                    Donate from the UK
+                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                  </a>
+                  <a
+                    href="http://dsz-internationalgiving.org/spendenabwicklung/fuer-spender/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
+                  >
+                    <span className="text-xl leading-none">🇩🇪</span>
+                    Donate from Germany
+                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
+                  </a>
+                </div>
+                <p className="text-xs text-muted-foreground mt-2 italic">
+                  These links direct you to partner organisations that enable tax-deductible giving.
+                </p>
+              </div>
+            </motion.div>
+            </div>
+
             {/* Why Give */}
             <div className="space-y-6">
               <motion.h3
@@ -362,72 +431,6 @@ export default function DonatePage() {
                   <p className="text-sm leading-relaxed"><span className="font-semibold text-primary">Why this matters:</span> <span className="text-muted-foreground">{reason.whyItMatters}</span></p>
                 </motion.div>
               ))}
-
-              {/* Bank Transfer Info */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-primary/10 rounded-xl p-6 border border-primary/20"
-              >
-                <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
-                  🏦 Avoid Fees — Donate by Bank Transfer
-                </h4>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Bank transfers from South African residents incur no fees and are <strong className="text-foreground">tax-deductible</strong>. Submit this form then check your email for instructions.
-                </p>
-
-                <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
-                  <Input
-                    type="email"
-                    placeholder="EMAIL"
-                    className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
-                  />
-                  <Input
-                    type="text"
-                    placeholder="AMOUNT"
-                    className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
-                  />
-                  <Button
-                    type="submit"
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full py-6 text-base font-bold"
-                  >
-                    <Send className="w-4 h-4 mr-2" />
-                    Send me the details
-                  </Button>
-                </form>
-
-                <div className="mt-5 pt-4 border-t border-primary/20">
-                  <p className="text-base font-bold text-foreground mb-3">
-                    Tax-Deductible Donations from Abroad
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <a
-                      href="https://www.ukfundforcharities.org/donate/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
-                    >
-                      <span className="text-xl leading-none">🇬🇧</span>
-                      Donate from the UK
-                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
-                    </a>
-                    <a
-                      href="http://dsz-internationalgiving.org/spendenabwicklung/fuer-spender/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-card rounded-lg px-4 py-3 border border-border hover:shadow-md hover:border-primary/40 transition-all text-sm font-medium text-foreground"
-                    >
-                      <span className="text-xl leading-none">🇩🇪</span>
-                      Donate from Germany
-                      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground" />
-                    </a>
-                  </div>
-                  <p className="text-xs text-muted-foreground mt-2 italic">
-                    These links direct you to partner organisations that enable tax-deductible giving.
-                  </p>
-                </div>
-              </motion.div>
             </div>
           </div>
         </div>
