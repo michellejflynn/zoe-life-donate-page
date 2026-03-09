@@ -628,23 +628,23 @@ export default function DonatePage() {
       {/* Footer */}
       <footer className="bg-[#5a5a5a] py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
             {/* Logo & Social */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-2">
               <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
                 <img src={logoWhite} alt="Zoë-Life" className="h-14 mb-2" />
               </a>
               <p className="text-white/70 text-sm mb-4">building resilient futures</p>
               <div className="flex gap-3 mb-6">
                 {[
-                  { href: "https://www.facebook.com/zaboralife", label: "Facebook" },
-                  { href: "https://www.instagram.com/zaboralife", label: "Instagram" },
-                  { href: "https://www.linkedin.com/company/zoe-life", label: "LinkedIn" },
-                  { href: "https://www.tiktok.com/@zoelife", label: "TikTok" },
-                  { href: "https://www.youtube.com/@zoe-life", label: "YouTube" },
+                  { href: "https://www.facebook.com/zaboralife", label: "Facebook", icon: "f" },
+                  { href: "https://www.instagram.com/zaboralife", label: "Instagram", icon: "○" },
+                  { href: "https://www.linkedin.com/company/zoe-life", label: "LinkedIn", icon: "in" },
+                  { href: "https://www.tiktok.com/@zoelife", label: "TikTok", icon: "♪" },
+                  { href: "https://www.youtube.com/@zoe-life", label: "YouTube", icon: "▶" },
                 ].map((s) => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white text-xs font-bold transition-colors" aria-label={s.label}>
-                    {s.label[0]}
+                    {s.icon}
                   </a>
                 ))}
               </div>
@@ -656,33 +656,40 @@ export default function DonatePage() {
               </div>
             </div>
 
-            {/* Organisation & Get Involved */}
+            {/* Organisation + Get Involved */}
             <div>
               <h4 className="text-white font-bold text-lg mb-4">Organisation</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                {["Who We Are", "What We Do", "Zoë-Life Learning", "Research and Evidence"].map((item) => (
-                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
-                ))}
+                <li><a href="https://www.zoe-life.org/who-we-are" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Who We Are</a></li>
+                <li><a href="https://www.zoe-life.org/what-we-do" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">What We Do</a></li>
+                <li><a href="https://www.zoe-life.org/zoe-life-learning" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Zoë-Life Learning</a></li>
+                <li><a href="https://www.zoe-life.org/research-and-evidence" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Research and Evidence</a></li>
               </ul>
-              <h4 className="text-white font-bold text-lg mt-6 mb-4">Get Involved</h4>
+              <h4 className="text-white font-bold text-lg mt-8 mb-4">Get Involved</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                {["Sustainability Fund", "Donate", "Contact Us", "Vacancies"].map((item) => (
-                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
-                ))}
+                <li><a href="https://www.zoe-life.org/sustainability" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Sustainability</a></li>
+                <li><a href="https://www.zoe-life.org/fund" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Fund</a></li>
+                <li><a href="https://www.zoe-life.org/donate" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Donate</a></li>
+              </ul>
+              <ul className="space-y-2 text-white/70 text-sm mt-4">
+                <li><a href="https://www.zoe-life.org/contact-us" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Contact Us</a></li>
+                <li><a href="https://www.zoe-life.org/vacancies" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Vacancies</a></li>
               </ul>
             </div>
 
-            {/* Projects & YouThrive */}
+            {/* Projects + YouThrive */}
             <div>
               <h4 className="text-white font-bold text-lg mb-4">Projects</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                {["KidzAlive@home", "KidzAlive Mobilised", "KidzAlive Mozambique", "YouThrive Life Skills", "YouThrive Together"].map((item) => (
-                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
-                ))}
+                <li><a href="https://www.zoe-life.org/projects-kidzalive-at-home" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive@home</a></li>
+                <li><a href="https://www.zoe-life.org/projects-kidzalive-mobilised" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Mobilised</a></li>
+                <li><a href="https://www.zoe-life.org/projects-kidzalive-mozambique" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Mozambique</a></li>
+                <li><a href="https://www.zoe-life.org/projects-youthrive-life-skills" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">YouThrive Life Skills</a></li>
+                <li><a href="https://www.zoe-life.org/projects-youthrive-together" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">YouThrive Together</a></li>
               </ul>
-              <h4 className="text-white font-bold text-lg mt-6 mb-4">YouThrive</h4>
+              <h4 className="text-white font-bold text-lg mt-8 mb-4">YouThrive</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                <li><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">YouThrive Model</a></li>
+                <li><a href="https://www.zoe-life.org/youthrive-model" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">YouThrive Model</a></li>
               </ul>
             </div>
 
@@ -690,18 +697,19 @@ export default function DonatePage() {
             <div>
               <h4 className="text-white font-bold text-lg mb-4">KidzAlive</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                {["KidzAlive Model", "KidzAlive Talk Tool App", "KidzAlive Caregiver Connect", "KidzAlive Courses"].map((item) => (
-                  <li key={item}><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">{item}</a></li>
-                ))}
+                <li><a href="https://www.zoe-life.org/kidzalive-model" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Model</a></li>
+                <li><a href="https://www.zoe-life.org/kidzalive-talk-tool-app" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Talk Tool App</a></li>
+                <li><a href="https://www.zoe-life.org/kidzalive-caregiver-connect" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Caregiver Connect</a></li>
+                <li><a href="https://www.zoe-life.org/kidzalive-courses" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">KidzAlive Courses</a></li>
               </ul>
             </div>
 
-            {/* Policies */}
+            {/* Policies and Terms */}
             <div>
               <h4 className="text-white font-bold text-lg mb-4">Policies and Terms</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                <li><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Privacy Policy</a></li>
-                <li><a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Social Media Terms of Use</a></li>
+                <li><a href="https://www.zoe-life.org/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Privacy Policy</a></li>
+                <li><a href="https://www.zoe-life.org/social-media-terms-of-use" target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">Social Media Terms of Use</a></li>
               </ul>
               <p className="text-white/70 text-xs mt-6 font-bold">Unless expressly specified, the presence of individuals on this website does not imply any information about their HIV status.</p>
             </div>
