@@ -257,22 +257,100 @@ export default function DonatePage() {
               <div className="p-4 text-sm text-muted-foreground border-b border-border">
                 Donate by card, PayPal or Google/Apple Pay when available. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>.
               </div>
-              <div className="p-2">
-                <iframe
-                  src="https://donorbox.org/embed/zoe-life-operations-funding-gap?default_interval=m&enable_auto_scroll=true"
-                  name="donorbox"
-                  seamless
-                  frameBorder="0"
-                  scrolling="no"
-                  height="900"
-                  width="100%"
-                  style={{
-                    maxWidth: "500px",
-                    minWidth: "250px",
-                  }}
-                  allow="payment"
-                  title="Donate to Zoë-Life"
-                />
+              <div className="p-6 space-y-6">
+                {/* Frequency Toggle */}
+                <div className="flex rounded-lg overflow-hidden border border-border">
+                  {["One-time", "Monthly", "Quarterly", "Annually"].map((freq) => (
+                    <button
+                      key={freq}
+                      className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
+                        freq === "Monthly"
+                          ? "bg-primary text-primary-foreground"
+                          : "bg-card text-muted-foreground hover:bg-muted"
+                      }`}
+                    >
+                      {freq}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Currency Selector */}
+                <div>
+                  <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Currency</label>
+                  <select className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground">
+                    <option value="ZAR">South African Rand (ZAR)</option>
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                  </select>
+                </div>
+
+                {/* Amount Grid */}
+                <div>
+                  <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 block">Select Amount</label>
+                  <div className="grid grid-cols-3 gap-2">
+                    {["R100", "R250", "R500", "R1,000", "R2,500", "R5,000"].map((amt) => (
+                      <button
+                        key={amt}
+                        className={`py-3 rounded-lg text-sm font-semibold border transition-colors ${
+                          amt === "R500"
+                            ? "bg-primary text-primary-foreground border-primary"
+                            : "bg-card text-foreground border-border hover:border-primary/50"
+                        }`}
+                      >
+                        {amt}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="mt-3">
+                    <div className="relative">
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm font-medium">R</span>
+                      <input
+                        type="text"
+                        placeholder="Other amount"
+                        className="w-full rounded-lg border border-border bg-card pl-7 pr-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Personal Info */}
+                <div className="space-y-3">
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">First Name</label>
+                      <input className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground" />
+                    </div>
+                    <div>
+                      <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Last Name</label>
+                      <input className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground" />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Email</label>
+                    <input type="email" className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground" />
+                  </div>
+                </div>
+
+                {/* Dedicate Checkbox */}
+                <label className="flex items-center gap-2 text-sm text-muted-foreground cursor-pointer">
+                  <input type="checkbox" className="rounded border-border" />
+                  Dedicate this donation
+                </label>
+
+                {/* Comment */}
+                <div>
+                  <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1.5 block">Comment (optional)</label>
+                  <textarea rows={2} className="w-full rounded-lg border border-border bg-card px-3 py-2.5 text-sm text-foreground resize-none" />
+                </div>
+
+                {/* Donate Button */}
+                <button className="w-full bg-primary text-primary-foreground font-bold py-3.5 rounded-lg text-lg hover:opacity-90 transition-opacity">
+                  Donate R500
+                </button>
+
+                <p className="text-xs text-center text-muted-foreground">
+                  Secured by SSL encryption
+                </p>
               </div>
             </motion.div>
 
