@@ -326,11 +326,6 @@ export default function DonatePage() {
                   />
                   <Input
                     type="text"
-                    placeholder="CURRENCY"
-                    className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
-                  />
-                  <Input
-                    type="text"
                     placeholder="AMOUNT"
                     className="bg-card border-border/60 placeholder:text-muted-foreground/50 placeholder:font-medium placeholder:tracking-wider"
                   />
