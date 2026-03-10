@@ -267,7 +267,7 @@ export default function DonatePage() {
                 </div>
               </div>
               <div className="p-4 text-sm text-muted-foreground border-b border-border">
-                Donate by Card, PayPal or Google/Apple Pay here. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>. Donating from the UK or Germany? <a href="#" className="underline text-primary hover:text-primary/80">Click here</a>.
+                Donate by Card, PayPal or Google/Apple Pay here. All donations from South African residents are <strong className="text-foreground">tax-deductible</strong>. Donating from the UK or Germany? <a href="#tax-deductible-abroad" className="underline text-primary hover:text-primary/80">Click here</a>.
               </div>
               <div className="p-6 space-y-6">
                 {/* Frequency Toggle */}
