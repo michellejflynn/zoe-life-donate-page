@@ -86,8 +86,8 @@ export default function DonatePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Sticky Nav */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+      {/* Nav */}
+      <header className="bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-4 px-4">
           <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
             <img src={logo} alt="Zoë-Life" className="h-16" />
