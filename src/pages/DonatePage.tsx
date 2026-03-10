@@ -387,7 +387,7 @@ export default function DonatePage() {
                 viewport={{ once: true }}
                 className="text-2xl font-bold text-foreground"
               >
-                The Impact Your Gift Can Have
+                The Impact Your Donation Can Have
               </motion.h3>
 
               {reasons.map((reason, i) => (
