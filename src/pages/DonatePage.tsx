@@ -352,7 +352,7 @@ export default function DonatePage() {
                 🏦 Avoid Fees — Donate by Bank Transfer
               </h4>
               <p className="text-sm text-muted-foreground mb-6">
-                Bank transfers from South African residents incur no fees. Submit this form then check your email for instructions to complete the donation.
+                Bank transfers from South Africa incur no fees. Submit this form then check your email for instructions to complete the donation.
               </p>
 
               <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
