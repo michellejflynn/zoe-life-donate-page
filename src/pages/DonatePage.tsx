@@ -413,6 +413,7 @@ export default function DonatePage() {
 
               {/* Tax-Deductible Donations from Abroad */}
               <motion.div
+                id="tax-deductible-abroad"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
