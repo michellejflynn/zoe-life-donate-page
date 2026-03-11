@@ -479,14 +479,14 @@ export default function DonatePage() {
                 desc: "Children & caregivers reached with child-centred HIV care, disclosure support, and the award-winning TalkTool app across South Africa and 5 countries.",
               },
               {
-                title: "YouThrive",
-                stat: "3,000+",
-                desc: "Youth reached with health education, GBV prevention, life skills, career guidance, and mental health support since 2022.",
-              },
-              {
                 title: "Career Guidance",
                 stat: "13,500+",
                 desc: "Learners reached across 120 schools with career exploration and mentorship, equipping young people for their futures.",
+              },
+              {
+                title: "YouThrive",
+                stat: "3,000+",
+                desc: "Youth reached with health education, GBV prevention, life skills, career guidance, and mental health support since 2022.",
               },
             ].map((prog, i) => (
               <motion.div
