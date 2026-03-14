@@ -306,12 +306,12 @@ export default function DonatePage() {
                 {/* Amount Grid */}
                 <div className="grid grid-cols-3 gap-3">
                   {[
-                    { label: "ZAR", amount: "200" },
-                    { label: "ZAR", amount: "500" },
-                    { label: "ZAR", amount: "800" },
-                    { label: "ZAR", amount: "2,000" },
-                    { label: "ZAR", amount: "8,000" },
-                    { label: "ZAR", amount: "20,000" },
+                    { label: "USD", amount: "200" },
+                    { label: "USD", amount: "500" },
+                    { label: "USD", amount: "800" },
+                    { label: "USD", amount: "2,000" },
+                    { label: "USD", amount: "8,000" },
+                    { label: "USD", amount: "20,000" },
                   ].map((item) => (
                     <button
                       key={item.amount}
