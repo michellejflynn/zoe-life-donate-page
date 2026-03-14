@@ -54,28 +54,37 @@ const impactStats = [
 
 const reasons = [
   {
-    title: "R420 ($25) – Career Assessment & Mentorship",
+    amount: "$25",
+    localAmount: "R420",
+    headline: "One young person discovers their future",
     icon: Compass,
-    description:
-      "R420 provides one learner with a career assessment and mentorship to discover their strengths and their career pathway.",
-    whyItMatters:
-      "Youth unemployment in South Africa sits at an alarmingly high 46% among 15–34 year olds, with lack of career guidance being a key driver.",
+    outcome:
+      "A career assessment and mentorship session that helps one learner uncover their strengths and chart a path out of unemployment.",
+    urgency:
+      "46% of South African youth are unemployed. For most, it starts with never being shown what's possible.",
+    color: "from-amber-500 to-orange-600",
   },
   {
-    title: "R2,500 ($155) – Healthcare Worker Training",
+    amount: "$155",
+    localAmount: "R2,500",
+    headline: "One health worker saves 200 children",
     icon: HeartHandshake,
-    description:
-      "R2,500 trains one healthcare worker, equipping them to guide up to 200 HIV-positive children through age-appropriate disclosure.",
-    whyItMatters:
-      "South Africa has an estimated 150,000 children living with HIV — yet fewer than half are aware of their own status. Children who don't know their diagnosis are far less likely to adhere to treatment, and most healthcare workers have no formal training in how to have that conversation.",
+    outcome:
+      "Full training for one healthcare worker to guide up to 200 HIV-positive children through age-appropriate disclosure — so they understand their diagnosis and stick with treatment.",
+    urgency:
+      "150,000 children in South Africa live with HIV. Fewer than half know their own status.",
+    color: "from-rose-500 to-red-600",
   },
   {
-    title: "R3,350 ($200) – Classroom Transformation",
+    amount: "$200",
+    localAmount: "R3,350",
+    headline: "50 learners get the tools to change their lives",
     icon: Dumbbell,
-    description:
-      "R3,350 transforms a classroom by equipping 50 learners with the health literacy and life skills to recognise risk, resist pressure, and make informed choices that protect their health and shape their futures.",
-    whyItMatters:
-      "In South Africa, one in three pregnant teenagers never returns to school, 46% of youth are unemployed, and HIV rates among youth remain high. The common thread is a lack of access to quality education, health information, and guidance at the right age.",
+    outcome:
+      "A full classroom transformed with health literacy and life skills — empowering 50 young people to recognise risk, resist pressure, and protect their futures.",
+    urgency:
+      "1 in 3 pregnant teenagers in South Africa never returns to school. Early intervention changes everything.",
+    color: "from-emerald-500 to-teal-600",
   },
 ];
 
