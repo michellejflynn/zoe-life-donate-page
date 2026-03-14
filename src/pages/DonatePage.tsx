@@ -401,22 +401,45 @@ export default function DonatePage() {
 
               {reasons.map((reason, i) => (
                 <motion.div
-                  key={reason.title}
+                  key={reason.headline}
                   custom={i}
                   variants={fadeUp}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-lg transition-shadow"
+                  className="group relative bg-card rounded-2xl overflow-hidden shadow-md border border-border hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <reason.icon className="h-5 w-5 text-primary" />
+                  {/* Colored accent bar */}
+                  <div className={`h-1.5 w-full bg-gradient-to-r ${reason.color}`} />
+                  
+                  <div className="p-6">
+                    {/* Amount badge */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className={`text-3xl font-black bg-gradient-to-r ${reason.color} bg-clip-text text-transparent`}>
+                        {reason.amount}
+                      </span>
+                      <span className="text-xs font-medium text-muted-foreground bg-muted px-2.5 py-1 rounded-full">
+                        {reason.localAmount}
+                      </span>
                     </div>
-                    <h4 className="font-bold text-foreground text-lg">{reason.title}</h4>
+
+                    {/* Headline */}
+                    <h4 className="text-lg font-bold text-foreground leading-snug mb-3">
+                      {reason.headline}
+                    </h4>
+
+                    {/* Outcome */}
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      {reason.outcome}
+                    </p>
+
+                    {/* Urgency callout */}
+                    <div className="bg-muted/60 rounded-lg px-4 py-3 border-l-4 border-current" style={{ borderColor: 'hsl(var(--primary))' }}>
+                      <p className="text-xs font-semibold text-foreground leading-relaxed">
+                        ⚡ {reason.urgency}
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">{reason.description}</p>
-                  <p className="text-sm leading-relaxed"><span className="font-semibold text-primary">Why this matters:</span> <span className="text-muted-foreground">{reason.whyItMatters}</span></p>
                 </motion.div>
               ))}
 
