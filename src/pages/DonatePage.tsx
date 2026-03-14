@@ -293,6 +293,16 @@ export default function DonatePage() {
                   You can log in to edit your recurring donation any time <span className="inline-block w-4 h-4 rounded-full border border-muted-foreground text-xs text-center leading-4 align-middle">?</span>
                 </p>
 
+                {/* Currency Selector */}
+                <div>
+                  <label className="text-sm text-muted-foreground mb-1.5 block">Currency</label>
+                  <select className="w-full rounded-xl border border-border bg-card px-4 py-3.5 text-sm text-foreground" defaultValue="USD">
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="ZAR">South African Rand (ZAR)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                  </select>
+                </div>
+
                 {/* Amount Grid */}
                 <div className="grid grid-cols-3 gap-3">
                   {[
@@ -321,16 +331,6 @@ export default function DonatePage() {
                     placeholder="Custom Amount"
                     className="w-full rounded-xl border border-border bg-card pl-14 pr-4 py-4 text-lg text-foreground placeholder:text-muted-foreground/40"
                   />
-                </div>
-
-                {/* Currency Selector */}
-                <div>
-                  <label className="text-sm text-muted-foreground mb-1.5 block">Currency</label>
-                  <select className="w-full rounded-xl border border-border bg-card px-4 py-3.5 text-sm text-foreground">
-                    <option value="ZAR">South African Rand (ZAR)</option>
-                    <option value="USD">US Dollar (USD)</option>
-                    <option value="EUR">Euro (EUR)</option>
-                  </select>
                 </div>
 
                 {/* Next Button */}
