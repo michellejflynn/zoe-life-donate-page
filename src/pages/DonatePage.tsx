@@ -435,8 +435,8 @@ export default function DonatePage() {
 
                     {/* Urgency callout */}
                     <div className="bg-muted/60 rounded-lg px-4 py-3 border-l-4 border-current" style={{ borderColor: 'hsl(var(--primary))' }}>
-                      <p className="text-xs font-semibold text-foreground leading-relaxed">
-                        ⚡ {reason.urgency}
+                      <p className="text-sm font-semibold text-foreground leading-relaxed">
+                        ⚡ <span className="text-primary">Why this matters:</span> {reason.urgency}
                       </p>
                     </div>
                   </div>
