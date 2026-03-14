@@ -325,7 +325,7 @@ export default function DonatePage() {
 
                 {/* Custom Amount */}
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xs font-medium text-muted-foreground uppercase tracking-wider">ZAR</span>
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xs font-medium text-muted-foreground uppercase tracking-wider">USD</span>
                   <input
                     type="text"
                     placeholder="Custom Amount"
