@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
 import logo from "@/assets/zl-logo.webp";
 import logoWhite from "@/assets/zl-logo-white.png";
+import glomoAwardBanner from "@/assets/glomo-award-banner.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
