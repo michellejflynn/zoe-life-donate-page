@@ -7,6 +7,7 @@ import heroImage from "@/assets/donate-hero.jpg";
 import logo from "@/assets/zl-logo.webp";
 import logoWhite from "@/assets/zl-logo-white.png";
 import glomoAwardBanner from "@/assets/glomo-award-banner.png";
+import awardPhoto from "@/assets/award.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -600,6 +601,13 @@ export default function DonatePage() {
               <div className="absolute -top-4 -right-4 bg-zl-yellow text-secondary-foreground rounded-full w-20 h-20 flex flex-col items-center justify-center shadow-lg transform rotate-12">
                 <Award className="w-6 h-6" />
                 <span className="text-[10px] font-bold leading-tight text-center">GLOMO<br/>Winner</span>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border mt-6">
+                <img
+                  src={awardPhoto}
+                  alt="Zoë-Life team receiving the GLOMO Award at Mobile World Congress 2024"
+                  className="w-full h-auto"
+                />
               </div>
             </motion.div>
 
