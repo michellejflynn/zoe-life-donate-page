@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
 import logo from "@/assets/zl-logo.webp";
 import logoWhite from "@/assets/zl-logo-white.png";
+import glomoAwardBanner from "@/assets/glomo-award-banner.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -551,6 +552,129 @@ export default function DonatePage() {
               Support These Programmes
             </Button>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Talk Tool Award Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-muted/30 overflow-hidden">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="text-center mb-12"
+          >
+            <span className="inline-flex items-center gap-2 bg-zl-yellow/20 text-zl-yellow-dark px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+              <Award className="w-4 h-4" />
+              Global Recognition
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-4">
+              Award-Winning Innovation
+              <br />
+              <span className="text-primary">for Children Living with HIV</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Award Image & Badge */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border">
+                <img
+                  src={glomoAwardBanner}
+                  alt="KidzAlive Talk Tool App wins GLOMO Award at Mobile World Congress Barcelona 2024"
+                  className="w-full h-auto"
+                />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-foreground/80 to-transparent p-6">
+                  <p className="text-primary-foreground text-sm font-medium">
+                    Mobile World Congress, Barcelona — February 2024
+                  </p>
+                </div>
+              </div>
+              <div className="absolute -top-4 -right-4 bg-zl-yellow text-secondary-foreground rounded-full w-20 h-20 flex flex-col items-center justify-center shadow-lg transform rotate-12">
+                <Award className="w-6 h-6" />
+                <span className="text-[10px] font-bold leading-tight text-center">GLOMO<br/>Winner</span>
+              </div>
+            </motion.div>
+
+            {/* Right - Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="space-y-6"
+            >
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  The KidzAlive Talk Tool App
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Winner of the inaugural <strong className="text-foreground">GLOMO Award for Tech4Good — Best Mobile Innovation for Enhancing The Lives of Children and Young People</strong>, presented by the GSMA at Mobile World Congress 2024.
+                </p>
+              </div>
+
+              <blockquote className="border-l-4 border-primary pl-4 py-2 bg-primary/5 rounded-r-lg">
+                <p className="text-foreground italic text-sm leading-relaxed">
+                  "A brilliant example of using technology to improve the lives of people deeply affected by HIV — not only improving their chances but giving care workers and others involved the proper tools to assist."
+                </p>
+                <cite className="text-xs text-muted-foreground mt-2 block not-italic">— GLOMO Award Judges</cite>
+              </blockquote>
+
+              <div className="space-y-3">
+                {[
+                  "Empowers healthcare workers with digital counselling tools for HIV disclosure to children",
+                  "Uses gamification and storytelling to make HIV education engaging and memorable",
+                  "Available in multiple languages, breaking barriers across diverse communities",
+                  "Integrated into national and international health initiatives for global impact",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Heart className="w-3 h-3 text-primary" />
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-card rounded-xl border border-border p-5 shadow-sm">
+                <p className="text-foreground font-semibold mb-1">
+                  Your donation keeps this award-winning technology in the hands of those who need it most.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  150,000 children in South Africa live with HIV. The Talk Tool app helps healthcare workers guide them through understanding their diagnosis — giving them the knowledge and confidence to stay on treatment and thrive.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                <Button
+                  size="lg"
+                  onClick={scrollToForm}
+                  className="bg-primary text-primary-foreground hover:bg-zl-green-dark rounded-full px-8 font-bold shadow-lg"
+                >
+                  <Heart className="w-4 h-4 mr-2" />
+                  Fund This Innovation
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  asChild
+                  className="rounded-full px-8 font-semibold"
+                >
+                  <a href="https://www.kidzalive.co.za/stories/global-mobile-award-winner" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Read the Full Story
+                  </a>
+                </Button>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
