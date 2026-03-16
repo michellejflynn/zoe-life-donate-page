@@ -752,9 +752,6 @@ export default function DonatePage() {
                       strokeDashoffset={`${-(80 + 14.5) * 2.388}`}
                     />
                   </svg>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-background" />
-                  </div>
                 </div>
               </div>
 
