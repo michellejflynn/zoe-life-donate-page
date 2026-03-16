@@ -723,7 +723,7 @@ export default function DonatePage() {
                 <div className="relative w-56 h-56">
                   <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
                     {/* Background fill to match section */}
-                    <circle cx="50" cy="50" r="29" fill="hsl(var(--muted))" />
+                    <circle cx="50" cy="50" r="29" className="fill-muted" />
                     {/* Programmes 80% */}
                     <circle
                       cx="50" cy="50" r="38"
