@@ -602,6 +602,13 @@ export default function DonatePage() {
                 <Award className="w-6 h-6" />
                 <span className="text-[10px] font-bold leading-tight text-center">GLOMO<br/>Winner</span>
               </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border mt-6">
+                <img
+                  src={awardPhoto}
+                  alt="Zoë-Life team receiving the GLOMO Award at Mobile World Congress 2024"
+                  className="w-full h-auto"
+                />
+              </div>
             </motion.div>
 
             {/* Right - Content */}
