@@ -101,7 +101,7 @@ export default function DonatePage() {
       <header className="bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-4 px-4">
           <a href="https://www.zoe-life.org/" target="_blank" rel="noopener noreferrer">
-            <img src={logo} alt="Zoë-Life" className="h-16" />
+            <img src={logo} alt="Zoë-Life" className="h-20" />
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">
