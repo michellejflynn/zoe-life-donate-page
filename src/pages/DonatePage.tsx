@@ -143,7 +143,7 @@ export default function DonatePage() {
             </div>
             <Button
               onClick={scrollToForm}
-              className="bg-primary text-primary-foreground hover:bg-zl-green-dark font-semibold rounded-full px-8 py-3 text-base"
+              className="bg-primary text-primary-foreground hover:bg-zl-green-dark font-semibold rounded-full px-10 py-4 text-lg"
             >
               Donate
             </Button>
