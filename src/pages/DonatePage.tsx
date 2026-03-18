@@ -80,7 +80,7 @@ const reasons = [
   {
     amount: "$200",
     localAmount: "R3,350",
-    headline: "Provides 50 learners with the tools to change the course of their lives",
+    headline: "Equips 50 learners with the tools to make informed choices about their lives",
     icon: Dumbbell,
     outcome:
       "A full classroom transformed with health literacy and life skills — empowering 50 young people to recognise risk, resist pressure, and protect their futures.",
