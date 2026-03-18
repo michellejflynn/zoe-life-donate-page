@@ -56,6 +56,17 @@ const impactStats = [
 
 const reasons = [
   {
+    amount: "$2",
+    localAmount: "R35",
+    headline: "Enables one grandparent raising a vulnerable child to receive guidance and support",
+    icon: HandHeart,
+    outcome:
+      "Provides a caregiver support session for one grandparent and a nourishing meal for their grandchild — addressing both emotional and practical needs in one gift.",
+    urgency:
+      "South Africa has nearly 8 million children being raised by grandparents — 38% of all children — yet most of these caregivers, predominantly grandmothers, face financial hardship with almost no guidance or formal support.",
+    color: "from-violet-500 to-purple-600",
+  },
+  {
     amount: "$25",
     localAmount: "R420",
     headline: "Enables one young person to discover their future",
