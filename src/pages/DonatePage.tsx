@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send, Compass, HeartHandshake, Dumbbell, Menu, X } from "lucide-react";
+import { Heart, Users, Globe, Award, ChevronDown, ExternalLink, Send, Compass, HeartHandshake, Dumbbell, HandHeart, Menu, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/donate-hero.jpg";
@@ -55,6 +55,17 @@ const impactStats = [
 ];
 
 const reasons = [
+  {
+    amount: "$2",
+    localAmount: "R35",
+    headline: "Enables one grandparent raising a vulnerable child to access guidance and support, and provides 1 meal for their grandchild",
+    icon: HandHeart,
+    outcome:
+      "Guidance and support for one grandparent raising a vulnerable child, plus a nutritious meal for their grandchild.",
+    urgency:
+      "Nearly 8 million South African children are raised by grandparents (38% of all children), yet most caregivers, predominantly grandmothers, face financial hardship with little to no support.",
+    color: "from-violet-500 to-purple-600",
+  },
   {
     amount: "$25",
     localAmount: "R420",
