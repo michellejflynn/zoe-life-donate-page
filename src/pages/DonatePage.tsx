@@ -785,7 +785,7 @@ export default function DonatePage() {
               <p className="text-muted-foreground">
                 Every donation makes a real impact.{" "}
                 <strong className="text-foreground">
-                  We're proud to say 80% of every rand goes directly to delivering
+                  We're proud to say 80% of every donation goes directly to delivering
                   life-changing programmes.
                 </strong>{" "}
                 The rest supports essential fundraising and operations to keep our work going.
