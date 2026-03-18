@@ -58,7 +58,7 @@ const reasons = [
   {
     amount: "$2",
     localAmount: "R35",
-    headline: "Supports one grandparent and feeds their grandchild",
+    headline: "Supports one grandparent raising a vulnerable grandchild",
     icon: HandHeart,
     outcome:
       "Provides guidance and support for a grandparent raising a vulnerable child, plus a nutritious meal for their grandchild.",
