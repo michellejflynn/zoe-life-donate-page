@@ -69,7 +69,7 @@ const reasons = [
   {
     amount: "$155",
     localAmount: "R2,500",
-    headline: "One health worker saves 200 children",
+    headline: "Trains one healthcare worker to support 200 children",
     icon: HeartHandshake,
     outcome:
       "Full training for one healthcare worker to guide up to 200 HIV-positive children through age-appropriate disclosure — so they understand their diagnosis and stick with treatment.",
