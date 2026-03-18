@@ -58,7 +58,7 @@ const reasons = [
   {
     amount: "$25",
     localAmount: "R420",
-    headline: "One young person discovers their future",
+    headline: "Enables one young person to discover their future",
     icon: Compass,
     outcome:
       "A career assessment and mentorship session that helps one learner uncover their strengths and chart a path out of unemployment.",
