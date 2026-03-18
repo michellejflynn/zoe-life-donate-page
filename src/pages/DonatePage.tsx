@@ -58,10 +58,10 @@ const reasons = [
   {
     amount: "$2",
     localAmount: "R35",
-    headline: "Enables one grandparent raising a vulnerable child to access guidance and support, and provides 1 meal for their grandchild",
+    headline: "Supports one grandparent and feeds their grandchild",
     icon: HandHeart,
     outcome:
-      "Guidance and support for one grandparent raising a vulnerable child, plus a nutritious meal for their grandchild.",
+      "Provides guidance and support for a grandparent raising a vulnerable child, plus a nutritious meal for their grandchild.",
     urgency:
       "Nearly 8 million South African children are raised by grandparents (38% of all children), yet most caregivers, predominantly grandmothers, face financial hardship with little to no support.",
     color: "from-violet-500 to-purple-600",
