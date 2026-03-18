@@ -759,6 +759,7 @@ export default function DonatePage() {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="text-center md:text-left"
             >
               <h2 className="text-3xl md:text-5xl font-extrabold text-foreground leading-tight">
                 Your gift,
