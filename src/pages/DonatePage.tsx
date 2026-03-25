@@ -561,9 +561,32 @@ export default function DonatePage() {
                 <p className="text-muted-foreground text-sm mb-3">
                   Partner with Zoë-Life through Corporate Social Investment (CSI), employee giving, or strategic partnerships that deliver measurable impact for children, youth, and communities.
                 </p>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Our programmes are designed to align with corporate priorities, offering clear reporting, meaningful engagement opportunities, and the ability to contribute to sustainable, community-led change across the areas of child health, youth development, and community strengthening.
-                </p>
+                <h5 className="font-semibold text-foreground text-sm mt-4 mb-2">Corporate Partner Benefits:</h5>
+                <ul className="text-muted-foreground text-sm space-y-2 mb-4 list-none">
+                  <li className="flex items-start gap-2">
+                    <span className="font-semibold text-foreground shrink-0">1.</span>
+                    <span>Donations are <strong className="text-foreground">Tax-deductible</strong> (Section 18A registered)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="font-semibold text-foreground shrink-0">2.</span>
+                    <div>
+                      <span className="font-semibold text-foreground">BEE Points</span> for:
+                      <ul className="list-disc list-inside ml-1 mt-1 space-y-0.5">
+                        <li>Corporate Social Responsibility (CSI) spend</li>
+                        <li>Social Enterprise Development (SED) spend</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="font-semibold text-foreground shrink-0">3.</span>
+                    <div>
+                      <span className="font-semibold text-foreground">Skills Development Points</span> for:
+                      <ul className="list-disc list-inside ml-1 mt-1 space-y-0.5">
+                        <li>Zoë-Life's health and wellness services for employees</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
                 <a
                   href="mailto:info@zoelife.co.za?subject=Corporate%20Partnership%20Enquiry"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-6 py-3 text-sm font-semibold hover:opacity-90 transition-opacity"
