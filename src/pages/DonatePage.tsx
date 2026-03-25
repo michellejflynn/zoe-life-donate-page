@@ -547,6 +547,31 @@ export default function DonatePage() {
                   These links direct you to partner organisations that enable tax-deductible giving.
                 </p>
               </motion.div>
+
+              {/* Partner with Zoë-Life as a Business */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-xl p-6 border border-border shadow-sm"
+              >
+                <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-lg">
+                  🤝 Partner with Zoë-Life as a Business
+                </h4>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Partner with Zoë-Life through Corporate Social Investment (CSI), employee giving, or strategic partnerships that deliver measurable impact for children, youth, and communities.
+                </p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Our programmes are designed to align with corporate priorities, offering clear reporting, meaningful engagement opportunities, and the ability to contribute to sustainable, community-led change across the areas of child health, youth development, and community strengthening.
+                </p>
+                <a
+                  href="mailto:info@zoelife.co.za?subject=Corporate%20Partnership%20Enquiry"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-6 py-3 text-sm font-semibold hover:opacity-90 transition-opacity"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Contact Us About Partnerships
+                </a>
+              </motion.div>
             </div>
           </div>
         </div>
